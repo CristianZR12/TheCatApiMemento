@@ -23,4 +23,8 @@ constructor():EntityMapper<BreedsModel, BreedsRetrofitNetwork> {
         );
     }
 
+    fun mapFromEntityList(entities:List<BreedsRetrofitNetwork>):List<BreedsModel> {
+        return entities.map { mapToEntity(it) };
+    }
+
 }

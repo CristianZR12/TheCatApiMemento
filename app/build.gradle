@@ -43,6 +43,9 @@ dependencies {
     def retrofit = '2.6.0'
     implementation "com.squareup.retrofit2:retrofit:$retrofit"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit"
+    //Injection
+    def inject = "1"
+    implementation "javax.inject:javax.inject:$inject"
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
